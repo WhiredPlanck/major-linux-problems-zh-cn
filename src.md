@@ -34,7 +34,8 @@ Keep in mind that this list serves the purpose of showing what needs to be fixed
 
 (For those who hate reading long texts, there's a TL;DR version below). So Linux sucks because ...
 
-+ ** Hardware support: **
++ **Hardware support:**
+  
   1. Video accelerators/​acceleration (also see the X system section).
     +  ! NVIDIA Optimus technology which is used in most laptops often doesn't work well in Linux. People struggle with screen tearing, new kernel releases, etc.
     +  ! Open source drivers have certain, sometimes very serious problems (Intel-! and AMD):
@@ -62,7 +63,7 @@ Keep in mind that this list serves the purpose of showing what needs to be fixed
   + Laptops/notebooks often have special buttons and features that don't work (e.g. Fn + F1-F12 combination or special power-saving modes).
 5.  ! Resume after suspend in Linux is unstable and oftentimes doesn't work.
 6.  ! Often regressions are introduced in the Linux kernel, when some hardware stops working inexplicably in new kernel versions. I have personally reported two serious audio playback regressions, which have been consequently resolved, however most users don't know how to file bugs, how to bisect regressions, how to identify faulty components.
-+ Software support:
++ **Software support:**
         X system (current primary video output server in Linux):
             X.org is largely outdated, unsuitable and even very much insecure for modern PCs and applications.
             No high level, stable, sane (truly forward and backward compatible) and standardized API for developing GUI applications (like core Win32 API - most Windows 95 applications still run fine in Windows 10 - that's 24 years of binary compatibility). Both GTK and Qt (incompatible GTK versions 1, 2, 3, 4 and incompatible Qt versions 4, 5, 6 just for the last decade) don't strive to be backwards compatible. The Qt company also changed the licensing model for their toolkit which makes using the library under Linux problematic to say the least.
@@ -269,7 +270,7 @@ Keep in mind that this list serves the purpose of showing what needs to be fixed
 
 
 
-## ** Summary **
+## **Summary**
 
     No stability, bugs, regressions, regressions and regressions: There's a large number of regressions (both in the kernel and in user space applications) when things which used to work break inexplicably; some of the regressions can even lead to data loss. Basically there is no quality control (QA/QC) nor regression testing in most Open Source projects (including the kernel) - Microsoft, for instance, reports that Windows 8 received 1,240,000,000 hours of testing whereas new kernel releases get, I guess, under 10,000 hours of testing - and every Linux kernel release is comparable to a new Windows version. Serious bugs which impede normal workflow can take years to be resolved. A lot of crucial hardware (e.g. GPUs, Wi-Fi cards) isn't properly supported. Often regressions are introduced in "stable" x.y.Z kernel releases even though Linux developers insist such releases must be upgraded to immidiately.
     Hardware issues: Under Linux many devices and device features are still poorly supported or not supported at all. Some hardware (e.g. Broadcom Wi-Fi adapters) cannot be used unless you already have a working Internet connection. New hardware often becomes supported months after introduction. Specialized software to manage devices like printers, scanners, cameras, webcams, audio players, smartphones, etc. almost always just doesn't exist - so you won't be able to fully control your new gadgets and update firmware. Linux graphics support is a big bloody mess because kernel/X.org APIs/ABIs constantly change and NVIDIA/Broadcom/etc. companies don't want to allocate extra resources and waste their money just to keep up with an insane rate of changes in the Open Source software.
@@ -281,19 +282,6 @@ Keep in mind that this list serves the purpose of showing what needs to be fixed
     Money, enthusiasm, motivation and responsibility: I predicted years ago that FOSS developers would start drifting away from the platform as FOSS is no longer a playground, it requires substantial effort and time, i.e. the fun is over, developers want real money to get the really hard work done. FOSS development, which lacks financial backing, shows its fatigue and disillusionment. The FOSS platform after all requires financially motivated developers as underfunded projects start to wane and critical bugs stay open for years. One could say "Good riddance", but the problem is that oftentimes those dying projects have no alternatives or similarly-featured successors.
     No polish, no consistency and no HIG adherence (even KDE developers admit it).
     Various Linux components are loosely connected vs. other desktop operating systems like Windows and Mac OS X which means the same tasks running on Linux will consume quite a lot more energy (power) and as a result laptop users running Linux have a worse battery life. Here are some examples from a normal daily life: editing documents, listening to music, watching YouTube videos, or even playing games. Another example will be a simple task of desktop rendering: whereas Windows uses GPU acceleration and scheduling for many tasks related to rendering the image on the screen, Linux usually uses none.
-
- 
-
-
-
-
-
-
-
-
-
-
-
 
 
 ## This article is bollocks! Linux works for me/for my grandpa/for my aunt/etc.
@@ -405,19 +393,6 @@ The Linux distors zoo. Credit: MuseScore (CC BY 2.0)
     • Simple encrypted local file sharing (akin to CIFS) and many others.
     Other distros may actually exist but must contain all the defaults this Linux One distro sets by default: libraries (APIs), sound system, graphical server, desktop environment, etc.
 
- 
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Windows 10 vs. Linux
 
@@ -429,7 +404,7 @@ At the same time if you're buying and deploying new workstations you might consi
 
 © 2009-2020 Artem S. Tashkinov. Last revised: August 9, 2020. The most current version can be found here.
 
-----
+##  
 
 Additions to and well-grounded critiques of this list are welcomed. Mind that irrational comments lacking substance or factual information might be removed. Anonymous comments are pre-moderated disabled. I'm tired of anonymous haters who have nothing to say. Besides, Disqus sports authentification via Google/Twitter/Facebook and if you don't have any of these accounts then I'm sorry for your seclusion. You might as well not exist at all.
 
