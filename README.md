@@ -1,2 +1,2 @@
 # MLPoD-zh_CN
-My translations for Major Linux Problems on the Desktop
+My Chinese Simpilified translations for Major Linux Problems on the Desktop
