@@ -25,7 +25,7 @@ Source Link：https://itvision.altervista.org/why.linux.is.not.ready.for.the.des
 + 「Linux Works for Me™，本文简直是荒谬！」([原文](https://github.com/whriedplanck/MLPoD-zh_CN/blob/master/src.md#this-article-is-bollocks-linux-works-for-mefor-my-grandpafor-my-auntetc))
 + (原)作者的评价 ([原文](https://github.com/whriedplanck/MLPoD-zh_CN/blob/master/src.md#commentary-from-the-author))
 + 解决 Linux 的问题 ([原文](https://github.com/whriedplanck/MLPoD-zh_CN/blob/master/src.md#solving-linux))
-+ Windows 10 vs. Linux ([原文]())
++ Windows 10 vs. Linux ([原文](https://github.com/whriedplanck/MLPoD-zh_CN/blob/master/src.md#windows-10-vs-linux))
 + 一些评论 ([原文](https://github.com/whriedplanck/MLPoD-zh_CN/blob/master/src.md))
 
 ## 说明、计划和想法
@@ -36,7 +36,7 @@ Source Link：https://itvision.altervista.org/why.linux.is.not.ready.for.the.des
 
 + 原文是 HTML 网页，本仓库另存为了 Markdown 格式，因此有可能排版不佳，会在翻译过程中不断调整；
 
-+ 译者英语水平有限，如果发现翻译改变了原意产生了事实性错误，请尽快提出 issue（发现错别字）。如果读者有能力，欢迎通过 Pull Request 贡献您的翻译，但是在此之前，请先阅读已经翻译好的部分，以保持行文风格尽量一致。
++ 译者英语水平有限，如果发现翻译改变了原意产生了事实性错误，请尽快提出 issue（发现错别字、句意不达也可）。如果读者有能力，欢迎通过 Pull Request 贡献您的翻译，但是在此之前，请先阅读已经翻译好的部分，以保持行文风格尽量一致。
 
   > 本 README 文档还会持续更新，以及时公布译者已经清晰了解的情报。
 
