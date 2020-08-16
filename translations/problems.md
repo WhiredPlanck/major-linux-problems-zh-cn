@@ -12,10 +12,10 @@
        +  ! 开源 NVIDIA 驱动 Nouveau 不能正确地、完全地支持电源管理功能和风扇速度管理（这也几乎是 NVIDIA 的错）。
        +  ! 专有的 NVIDIA 驱动程序有一个使 GPU 保持最高性能水平的讨厌习惯，这会显著增加功耗，并且对于移动用户，会显著缩短电池寿命。NVIDIA在 2017 年 7 月意识到这个问题，但尽管他们在 2019 年进行了改进，问题仍然存在。
     + !! 根据一名不愿透露姓名的 NVIDIA 工程师所述：“几乎每个游戏都会崩溃……在某些情况下，我们谈论的是公然违反 API 规则的行为……驱动程序中已经有很多可选补丁，可以根据游戏设置简单地打开或关闭它们，然后有专门针对游戏的破解 ...（大家）曾经都想知道为什么几乎每个主要游戏版本都随附有来自 AMD 和/或 NVIDIA 的匹配驱动程序版本？” 开源社区根本没有资源来实现类似的破解来修复损坏的游戏，这意味着至少对于复杂的 3A 游戏，专有驱动程序将仍然是唯一的选择。
-  +  ! Linux 驱动drivers are usually much worse (they require a lot of tinkering, i.e. manual configuration) than Windows/Mac OS drivers in regard to support of non-standard display resolutions, very high (a.k.a. HiDPI) display resolutions or custom refresh rates.
-  +  ! Under Linux, setting multi-monitor configurations especially using multiple GPUs running binary NVIDIA drivers can be a major PITA.
-     (Not an issue for most users but still) GPU voltage tuning will most likely never be supported for NVIDIA GPUs which means there's no proper overclocking, or underclocking to save power.
-     +!! Extremely poor state and usability of the tools for monitoring and controlling GPU parameters like frequency, voltage and fan curves (akin to MSI Afterburner or GPU-Z in Windows), performance overlay (Fraps, RivaTuner Statistics Server), recording game sessions and streaming.
+  +  ! 对于非标准分辨率、超高分辨率（又叫 HiDPI）或自定义刷新率的支持，Linux 驱动通常比 Windows/macOS 的表现更糟糕（这些驱动需要很多修补工作，换句话说：需要很多人工配置）。
+  +  ! 在 Linux 下，要设置设定多显示器配置、尤其是使用多 GPU 运行二进制 NVIDIA 驱动，过程可以说相当让人讨厌。
+     (对于大多数用户不是问题但仍旧是个问题：）NVIDIA GPU 很可能永远不会支持 GPU 电压调节，这意味着没有恰当的方式去超频，或者降频来节省电量。
+     + !! 用于监视和控制 GPU 参数（例如频率，电压和风扇曲线，类似于 Windows 中的 MSI Afterburner 或 GPU-Z），性能显示图层（Fraps、RivaTuner Statistics Server），录制游戏会话和流媒体的工具的开发状态和可用性极差。
 
   2. Audio subsystem:
 
