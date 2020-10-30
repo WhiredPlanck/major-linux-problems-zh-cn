@@ -1,0 +1,152 @@
+Subject: About stable kernel APIs
+From:    Artem S. Tashkinov
+Date:    Sep 3, 2012 11:34 PM
+To:      Linus Torvalds
+
+Hello Linus,
+
+I don't mean to doubt, belittle or criticize you, but you
+recently said this:
+
+"One of the core kernel rules has always been that we never
+ever break any external interfaces. That rule has been there
+since day one, although it's gotten much more explicit only in
+the last few years. The fact that we break internal interfaces
+that are not visible to userland is totally irrelevant, and a
+total red herring."
+
+And now I wonder how your statement correlates with the following
+things:
+
+For the past ten years in the Linux kernel
+
+1) over several dozens of /proc files and directories have been
+dropped and they are no longer available;
+2) over ten times different /sys interfaces have changed;
+3) there was quite a mess with the inotify, dnotify, and fnotify
+interfaces
+4) a lot of API calls have become GPL only
+
+Best wishes,
+
+Artem
+
+----------------------------------------------------------------------
+Subject: Re: About stable kernel APIs
+From:    Linus Torvalds
+Date:    Sep 4, 2012 1:32 AM
+To:      Artem S. Tashkinov
+
+On Mon, Sep 3, 2012 at 10:34 AM, Artem S. Tashkinov wrote:
+>
+> For the past ten years in the Linux kernel
+
+Point me to an application that has broken.
+
+We fix it. Seriously. That's the rule. People who break applications
+get their stuff reverted.
+
+As to the GPL-only thing, that has never been an API. It's
+kernel-internal. We have *never* claimed that we'd support modules
+that weren't GPL. Many people in fact claim that they are not even
+legal, it's just never been brought up in court (and I personally
+don't think copyright grabbing is a good idea, but that's my
+*personal* opinion).
+
+Linus
+----------------------------------------------------------------------
+
+Subject: Re: About stable kernel APIs
+From:    Linus Torvalds
+Date:    Sep 4, 2012 1:37 AM
+To:      Artem S. Tashkinov
+
+On Mon, Sep 3, 2012 at 12:32 PM, Linus Torvalds wrote:
+>
+> Point me to an application that has broken.
+
+Btw, I can point to some cases myself:
+
+- X has broken. The X people do have the gnome disease, and the
+Nouveau people in particular continued to break their driver/X
+interfaces way too often, and for way too long. I hated it.
+
+- sound *libraries* have broken stuff way too f*cking often. It's not
+kernel breakage, but the alsa/pulseaudio/random-crap-of-the-day
+situation has definitely been problematic.
+
+- glibc updates have broken binaries. Christ. The glibc people are
+better than the gtk ones (*much* better), but they haven't been
+careful enough. And when told they broke applications, the answer has
+sometimes been "tough, that's unspecified behavior".
+
+But the kernel really has tried to be *very* careful. Even to the
+point of making excuses for actual bugs in user space. It's not
+*always* possible to do 100%: we've had things that just didn't get
+reported in a timely manner, for example, and we've had cases where we
+actually had to break some odd app because we needed to fix a security
+hole, but it's very unusual that things break.
+
+And unlike other projects, we really do take breakage reports
+seriously. And will revert huge big changes just because it broke
+somebodys application.
+
+Linus
+----------------------------------------------------------------------
+Subject: Re: Re: About stable kernel APIs
+From:    Artem S. Tashkinov
+Date:    Sep 4, 2012 2:06 AM
+To:      Linus Torvalds
+
+Can I quote your e-mail messages on my website?
+
+Artem
+----------------------------------------------------------------------
+Subject: Re: Re: About stable kernel APIs
+From:    Linus Torvalds
+Date:    Sep 4, 2012 3:30 AM
+To:      Artem S. Tashkinov
+
+On Mon, Sep 3, 2012 at 1:06 PM, Artem S. Tashkinov wrote:
+> Can I quote your e-mail messages on my website?
+
+Sure. But it's probably worth pointing out that at least nouveau has
+changed their policy, and avoid breaking things these days (*). I hope
+the glibc people do that too - they changed their development model a
+few months ago due to various reasons, and I haven't seen any
+particular cases of breakage since, so they may have changed their
+rules too.
+
+And while random audio interface changes has historically been a huge
+problem spot, that seems to have largely calmed down too. So I'm sure
+there are still problems around, but at the same time I would like to
+point out that the ones I pointed at are most likely to be historical
+problem points.
+
+Btw, many of the kernel compatibility things are configurable. So you
+can definitely compile a kernel that is *not* compatible with older
+user space by simply asking for it. Obvious examples of that include
+things like a.out support (easy way to kill off a whole set of old
+binaries), but there are less obvious examples of that too (ie
+compatibility layers for the old wireless configuration models, or
+some /proc features, some lm-sensors compat stuff etc).
+
+Sometimes, the compat features are also run-time and need enabling (or
+disabling of the newer model). Kernel graphics modesetting is an
+obvious example of that - older versions of X may need you to disable
+KMS, because they expect to start up in text-mode etc.
+
+So I'm *not* claiming that it's always totally trivial. And we do make
+mistakes, and sometimes people only notice those things many months
+afterwards. But we try *really* hard to be compatible even in the
+presense of bugs. An excellent example of this is the "32-bit autofs
+daemon on a 64-bit kernel" problem, where different distributions had
+different fixes for an outright kernel bug - and when we fixed that
+kernel bug, we actually had to remain bug-for-bug compatible with
+older versions.
+
+For a totally insane example of this kind of thing, see commit
+64f371bc3107 (and follow the history backwards - it points to some of
+the other commits in that whole insane compatibility saga).
+
+Linus

@@ -1,0 +1,128 @@
+abbr { border-bottom: 1px dotted; }
+img { border: 0; }
+img.valid {
+	width: 80px;
+	height: 15px;
+}
+
+
+ul:not(.root) { list-style-type: circle; }
+ul.uplist li {
+	margin-bottom: 2pt;
+	text-indent: 0;
+}
+
+.gplus { text-align: center; }
+
+.toc a {
+	text-decoration: none;
+	color: inherit
+}
+
+.trans {
+	position: fixed;
+	top: 1%;
+	z-index: 5;
+	display: inline;
+	opacity: 0.6;
+}
+
+.gtrans { right: 2%; }
+.btrans { left: 2%;  }
+
+@media print {
+	#google_translate_element, #MicrosoftTranslatorWidget, #bookmarkme, #dsq-app5, .adsbygoogle, .jump2top {
+		display: none !important;
+	}
+	.docenter {
+		width: 100%;
+	}
+
+	/* word-wrap: break-all;
+	word-break:break-all; */
+}
+
+@media screen and ( max-width: 1180px ) {
+	#google_translate_element {
+		display: none;
+	}
+	#MicrosoftTranslatorWidget {
+		display: none;
+	}
+}
+
+.docenter {
+	width: 728px;
+	margin-left: auto;
+	margin-right:auto;
+	position: relative;
+}
+
+@media only screen and ( max-width: 740px ) {
+	.docenter {
+		width: 100%;
+	}
+
+	/* word-wrap: break-all;
+	word-break:break-all; */
+}
+
+/* TODO 2015-10-23 23:05:17: support 4K displays better
+
+@media only screen and ( min-width: 1921px ) {
+	.docenter {
+		width: 66%;
+	}
+
+	font-size: 2em;
+} */
+
+.line {
+	background-color: #888888;
+	height: 1px;
+	line-height: 1px;
+	font-size: 1px;
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+
+.tldr, .tldr a { color:#006070; }
+.better { color:#265626; }
+.red { color:#FF0000; font-weight:bold; }
+.ind { text-indent: 1.5em; }
+.ttc { text-align: center; }
+
+.code {
+	font-family: monospace;
+	background-color: #D2E5FF;
+	border: 1px solid #000;
+	padding-top: 2px;
+	padding-right: 2px;
+	padding-bottom: 2px;
+	padding-left: 2px;
+	white-space: pre;
+}
+
+.w {
+	white-space: pre;
+	font-size:60%;
+}
+
+.offtopic {
+	color: gray;
+}
+
+.adslot_1 { width: 320px; height: 100px; }
+@media (min-width:300px) { .adslot_1 { width: 234px; height: 60px; } }
+@media (min-width:400px) { .adslot_1 { width: 320px; height: 50px; } }
+@media (min-width:500px) { .adslot_1 { width: 468px; height: 60px; } }
+@media (min-width:800px) { .adslot_1 { width: 728px; height: 90px; } }
+
+.jump2top {
+	position: fixed;
+	bottom: 1%;
+	right: 2%;
+	z-index: 6;
+	background: url('/files/bwhite.png')
+}
