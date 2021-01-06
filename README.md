@@ -16,9 +16,9 @@
 
 > The sole purpose of translating is just to provide opinions to Chinese-speaking viewers, and to arouse the discussion about Linux on Desktop. And not licensed by original author(s) yet.
 
-## 目录 / Table of Contents
+## 目录表 / Table of Contents
 
-- 前言（[原文](https://github.com/whriedplanck/major-linux-problems-zh-cn/blob/master/full-text.md#preface) | 译文）
+- 前言（[原文](https://github.com/whriedplanck/major-linux-problems-zh-cn/blob/master/full-text.md#preface) | [译文](https://github.com/whriedplanck/major-linux-problems-zh-cn/blob/master/translation-full.md#前言)）
 - 桌面级 Linux 的问题和主要缺点（[原文](https://github.com/whriedplanck/major-linux-problems-zh-cn/blob/master/full-text.md#desktop-linux-problems-and-major-hortcomings) | 译文）
 - **摘要**（太长不看版）（[原文](https://github.com/whriedplanck/major-linux-problems-zh-cn/blob/master/full-text.md#summary) | 译文）
 - 「Linux Works for Me™，本文简直是荒谬！」（[原文](https://github.com/whriedplanck/major-linux-problems-zh-cn/blob/master/full-text.md#) | 译文）
