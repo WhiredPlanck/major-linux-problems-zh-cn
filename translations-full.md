@@ -10,26 +10,28 @@
   * Windows 10 vs. Linux
   * Solving Linux
   * Comments
-  
+
 ### 前言
 
 在这篇定期却鲜少更新的文章里，无疑有着整个互联网上有关 _Linux 发行版的难题_ 最全的列表，我们仅讨论这些发行版的主要难题和缺点（这些问题和缺点或许是一些人说 Linux 发行版还没在桌面领域准备好的原因）。而大家也应该要记得，Linux 在一些方面要比其他操作系统优秀：一个发行版中有出色的软件包管理，开箱即有的多平台和多架构支持，而且_通常_具有出色的稳定性，没有广泛传播的病毒或者恶意软件，几乎从不需要重装完整系统。此外，Linux 的可定制性也相当高，容易脚本化，而且它是自由的，就像啤酒一样。
 
-笔者再重申一下, 本文主要关于的是 _Linux 发行版_，但是,下文列出的 _许多问题_ 同样会影响 Linux 内核（即各种 Linux 发行版和 Android 的核心）。
+笔者再重申一下, 本文主要关于的是 _Linux 发行版_，但是，下文列出的 _许多问题_ 同样会影响 Linux 内核（即各种 Linux 发行版和 Android 的核心）。
 
 这篇文章_不是_特意要拿 Windows 和 Linux 做比较，但是读者还是会发现文中拿了 Windows 或者 macOS 进行比较以作为参考（毕竟，这两者的市场占有率要比 Linux 高一个数量级）。下文列出的大多数问题本质上是技术性的，但是也有些是“政治性”的（这不是笔者的观点 —— 是别人这么说的）—— 例如，当商业公司拒绝公布或者只公布部分的硬件数据表时，Linux 用户会因此无法发挥电脑的全部功能、或者个别驱动程序存在问题，而这在 Linux 社区中几乎没人可以解决。
 
 笔者还想要说清楚一件事情 - [Windows](https://itvision.altervista.org/why-windows-10-sucks.html)，在某些方面，甚至比 Linux 更糟，它_自己也有一些严重问题_。笔者想说的是 Windows 以下几个极具破坏性的问题：
-    - Windows rot（新软件安装和磁盘碎片会显著降低系统响应速度，即“越用越慢”）
-    - 没有强制的文件系统和注册表层次结构（笔者还没有找到一个可以严格完全干净地卸载的应用程序）
-    - 没有真正的安全模式，用户就是系统管理员（因此病毒/恶意软件肆虐 —— 大多数用户_不了解也不会去_了解 UAC 警告）
-    - 没有良好的软件打包机制（MSI 脆弱且令人憎恶）, 
-    - 没有系统范围的更新机制（包括第三方软件）
-    - Windows 调试难度极其高
-    - Windows 的引导问题往往是致命而无法解决的，除非全新重装系统
-    - Windows 很依赖硬件（尤其是从 UEFI 运行时）
-    - SSD 磁盘上的文件系统碎片过多
-    - Windows 更新很不可靠，也很浪费磁盘空间，等等
+   * Windows rot（新软件安装和磁盘碎片会显著降低系统响应速度，即“越用越慢”）
+   * 没有强制的文件系统和注册表层次结构（笔者还没有找到一个可以严格完全干净地卸载的应用程序）
+   * 没有真正的安全模式，用户就是系统管理员（因此病毒/恶意软件肆虐 —— 大多数用户 _不了解也不会去_ 了解 UAC 警告）
+   * 没有良好的软件打包机制（MSI 脆弱且令人憎恶）
+   * 没有系统范围的更新机制（包括第三方软件）
+   * Windows 调试难度极其高
+   * Windows 的引导问题往往是致命而无法解决的，除非全新重装系统
+   * Windows 很依赖硬件（尤其是从 UEFI 运行时）
+   * SSD 磁盘上的文件系统碎片过多
+   * Windows 更新很不可靠，也很浪费磁盘空间，等等
+
+
 
 可能你已经很多次听过这样的说法：Linux 已经通过 Android 征服了整个世界，因为后者运行在大多数智能手机上（确实有少数专用计算机安装着 Android，但它们不是所谓 [台式机](http://mobile.slashdot.org/comments.pl?sid=2772729&cid=39611863)）。然而请记住两个重点 - 首先，Android [不](https://itvision.altervista.org/files/android_is_not_linux.png)[是](http://arstechnica.com/gadgets/2009/02/an-introduction-to-google-android-for-developers/) [Linux](http://www.gnu.org/gnu/gnu-linux-faq.html#linuxsyswithoutgnu)（此外，有谁见过有人在自己的台式机或笔记本上运行 Android 的吗？）。Android 包含的 Linux 的组件仅仅是其内核罢了（再补充一点，还是完全由谷歌维护和提供支持的几个固定的旧版本（截至 2016 年有 3.0.x、3.4.x 或 3.10.x））。其次， Android 并不是桌面级操作系统，而是用于手机、平板电脑和其他触屏设备的操作系统。所以，这篇文章和 Android **没有关系**，它和[成群的](http://distrowatch.com/) _Linux 发行版_ （以下简称“发行版”）和其中包含的开源软件有关。
 
@@ -39,7 +41,7 @@
 
 列表上标为绿色的条目（译者注：由于 GitHub 不支持彩色 Markdown 格式，这部分内容会以文字方式指出）表示已解决了一部分，或者不是很关键、很有问题，或者是有解决方案）。
 
-这份列表迫切需要重新组织内容，因为里面有些问题是至关重要的，有些则不是。作为一名（Linux）用户，你可能_很幸运地_不会遇到任何一个这些问题（如果你有_对口_的硬件，永远不会折腾坏自己的系统，并且_仅仅_使用发行版包含的_数量相当有限_的软件）。
+这份列表迫切需要重新组织内容，因为里面有些问题是至关重要的，有些则不是。作为一名（Linux）用户，你可能_很幸运地_不会遇到任何一个这些问题（如果你有 _对口_ 的硬件，永远不会折腾坏自己的系统，并且 _仅仅_ 使用发行版包含的 _数量相当有限_ 的软件）。
 
 在开始阅读前还有几点重要的考虑事项：
 
@@ -238,7 +240,7 @@ insecurity-the-kernel-of-the-argument/) with the state of security in Linux
 because it is simply lacking.
 
     5. Linux servers **might be** a lot [less secure](https://www.virusbtn.com/virusbulletin/archive/2014/07/vb201407-Mayhem "Mayhem – a hidden threat for *nix web servers") than ... Windows servers, "The vast majority of webmasters and system administrators have to update their software manually and test that their infrastructure works correctly".   
-  
+
 Seems like there are lots of uniquely gifted people out there thinking I'm an
 idiot to write about this. Let me clarify this issue: whereas in Windows
 security updates are mandatory and they are usually installed automatically,
@@ -250,12 +252,12 @@ apache, exim, postfix). The above two causes lead to a situation when hundreds
 of thousands of Linux installations **never receive any updates** , because
 their respective administrators don't bother to update anything since they're
 afraid that something will break.  
-  
+
 August 2016 report from Kaspersky
 [corroborates](http://fudzilla.com/news/41256-the-rise-of-the-linux-botnets)
 my thesis: in the first seven months of 2016 the number of infected Linux
 **servers** increased by 70%.  
-  
+
 Ubuntu, starting with version 16.04 LTS, applies security updates
 [automatically](https://wiki.ubuntu.com/Security/Features) except for the
 Linux kernel updates which require reboot (it can be eliminated as well but
@@ -830,9 +832,9 @@ You can subscribe to this page via an ![RSS icon
   |
 
 Share91  
-  
+
 ---|---  
-  
+
 
 
   
@@ -862,7 +864,7 @@ HTML5!](Main%20Linux%20problems%20on%20the%20desktop,%202020%20edition%20or%20wh
 [![Valid
 CSS3!](Main%20Linux%20problems%20on%20the%20desktop,%202020%20edition%20or%20why%20Linux%20sucks_files/valid_css3_blue.png)](http://jigsaw.w3.org/css-
 validator/check/referer)  
-  
+
 ↑ Back to top
 
 [![free hit
