@@ -17,7 +17,7 @@
 
 笔者再重申一下, 本文主要关于的是 _Linux 发行版_ ，但是，下文列出的 _许多问题_ 同样会影响 Linux 内核（即各种 Linux 发行版和 Android 的核心）。
 
-这篇文章_不是_特意要拿 Windows 和 Linux 做比较，但是读者还是会发现文中拿了 Windows 或者 macOS 进行比较以作为参考（毕竟，这两者的市场占有率要比 Linux 高一个数量级）。下文列出的大多数问题本质上是技术性的，但是也有些是“政治性”的（这不是笔者的观点 —— 是别人这么说的）—— 例如，当商业公司拒绝公布或者只公布部分的硬件数据表时，Linux 用户会因此无法发挥电脑的全部功能、或者个别驱动程序存在问题，而这在 Linux 社区中几乎没人可以解决。
+这篇文章 _不是_ 特意要拿 Windows 和 Linux 做比较，但是读者还是会发现文中拿了 Windows 或者 macOS 进行比较以作为参考（毕竟，这两者的市场占有率要比 Linux 高一个数量级）。下文列出的大多数问题本质上是技术性的，但是也有些是“政治性”的（这不是笔者的观点 —— 是别人这么说的）—— 例如，当商业公司拒绝公布或者只公布部分的硬件数据表时，Linux 用户会因此无法发挥电脑的全部功能、或者个别驱动程序存在问题，而这在 Linux 社区中几乎没人可以解决。
 
 笔者还想要说清楚一件事情 - [Windows](https://itvision.altervista.org/why-windows-10-sucks.html)，在某些方面，甚至比 Linux 更糟，它 _自己也有一些严重问题_ 。笔者想说的是 Windows 以下几个极具破坏性的问题：
    * Windows rot（新软件安装和磁盘碎片会显著降低系统响应速度，即“越用越慢”）
@@ -47,7 +47,7 @@
 
   * 如果你相信 Linux 是完美无缺的，请关掉这个网页。
   * 如果你觉得任何对 Linux 的批评都只是毫无根据的谩骂，那请关掉这个网页。
-  * 如果你认为这篇文章的目的是要表达“_没有什么在 Linux 是能正常工作的_”或者 “_Linux 几乎没有可用性_”这样的观点，那就错了，还是请你离开吧。
+  * 如果你认为这篇文章的目的是要表达“_没有什么在 Linux 中是能正常工作的_”或者 “_Linux 几乎没有可用性_”这样的观点，那就错了，还是请你离开吧。
   * 如果你相信 Linux 和 Linux 用户可以脱离商业软件和游戏的情况下，也能正常工作或生活，请关掉这个网页。
   * 如果你觉得笔者是在这推销 Windows 或者 macOS，请关掉这个网页。
   * 如果你认为笔者我是在这里散播有关 Linux 的谣言（甚至觉得是在贩卖恐慌，挑拨观点）的话，恕我丑话，请你 _马上滚蛋不要再来_！吃饱了没事干的话，请把气焰烧在战争和中伤别人上吧。
@@ -175,7 +175,7 @@ Secondly, forget about proper output[rotation/scaling/ratio](https://www.reddit.
       * ! Performance/smoothness/stuttering issues due to the translation overhead between Win32 APIs/Direct3D and Linux APIs/Vulkan.
     7. ! It should be possible to configure _pretty much everything_ via GUI (in the end Windows and Mac OS allow this) which is still not a case for some situations and operations.
     8. No polish and universally followed conventions. Different applications may have totally different shortcuts for the same actions, UI elements may be placed and look differently.
-    
+
   * **Problems stemming from low Linux popularity and open source nature** : 
     1. ! Few software titles, inability to run familiar Windows software (some applications which don't work in [Wine](http://bugs.winehq.org/describekeywords.cgi "Over 3000 regressions on the 20th of October, 2012") \- look at the lines which contain the word "regression" - have zero Linux equivalents).
     2. ! No equivalent of some hardcore Windows [software](http://linux.slashdot.org/comments.pl?sid=2820335&cid=39846935) like ArchiCAD, 3ds Max, Adobe products like Premier and Photoshop, Corel Draw, Quicken, video authoring applications/etc. Home and enterprise users just won't bother installing Linux until they can get their work done.
@@ -246,7 +246,7 @@ Ubuntu, starting with version 16.04 LTS, applies security updates [automatically
     32. There's a lot of [hostility](https://plus.google.com/+LennartPoetteringTheOneAndOnly/posts/J2TZrTvu7vd "Much of the Open Source community tries to advertise the community as one happy ...") in the open source community.
     33. This is so [freaking "amazing"](https://mjg59.dreamwidth.org/41085.html "Matthew Garrett: There's more than one way to exploit the commons"), you absolutely [have to read it](https://www.jwz.org/blog/2016/04/i-would-like-debian-to-stop-shipping-xscreensaver/) \- the developer behind XScreenSaver [fought](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=819703 "xscreensaver: please disable 'This version of XScreenSaver is very old! Please upgrade!' message") with Debian developers.
     34. Random ramblings or why you may hate Linux (some are severely outdated/irrelevant/fixed but they are left for posterity to see the innards of the open source movement and community):  
-    
+
 1) [KDE: troubleshooting kded4 bugs](https://kdepepo.wordpress.com/2011/05/11/troubleshooting-kded4-bugs/).  
 2) [A big discussion](https://apple.slashdot.org/story/11/11/11/0233227/whats-keeping-you-on-windows) on Slashdot as to why people still prefer Windows over Linux.
 3) [Another big discussion](https://linux.slashdot.org/story/12/03/21/0341218/why-linux-cant-sell-on-the-desktop) on Slashdot as to why Linux still lacks.
@@ -315,24 +315,24 @@ Ubuntu, starting with version 16.04 LTS, applies security updates [automatically
 
 
 
-### This article is bollocks! Linux works for me/for my grandpa/for my aunt/etc.
+### “这篇文章是胡扯！ Linux 能给我/我的祖父/姨妈/等等人用” 云云
 
-Hey, I love when people are saying this, however here's a list of Linux problems which affect pretty much every Linux user.
+嘿，笔者很中意有人这么说，然而这里还是有一列表的问题深深地影响着每一位 Linux 用户。
 
-  * Neither Mozilla Firefox nor Google [Chrome](http://linux.slashdot.org/story/14/03/04/1926233/google-wont-enable-chrome-video-acceleration-because-of-linux-gpu-bugs) use video decoding and output acceleration in Linux, thus youtube clips will drain your laptop battery a lot faster than e.g. in Windows.
-  * NVIDIA Optimus technology is a pain to use under most Linux distors and it does not work under secure UEFI mode at all for absolute most people out there.
-  * Keyboard shortcut handling for people using local keyboard layouts is [broken](https://bugs.freedesktop.org/show_bug.cgi?id=865) (this bug is now **15 years old** ). Not everyone lives in English-speaking countries.
-  * Keyboard handling in X.org is broken by design - when you have a pop-up or an open menu, global keyboard shortcuts/keybindings [don't](https://bugzilla.gnome.org/show_bug.cgi?id=344059 "Ways to make global keybindings work during grabs") (GTK) [work](https://bugs.kde.org/show_bug.cgi?id=70063 "global shortcuts don't work when any popup is active") (QT).
-  * There's no easy way to use software which is not offered by your distro repositories, especially the software which is available only as sources. For the average Joe, who's not an IT specialist, there's no way at all.
-  * You don't play games, do you? Linux still has very [few native AAA games](https://store.steampowered.com/linux): for the past three years less than a dozen of AAA titles have been made available. Most Linux games on Steam are Indies. To be fair you can now run thousands of Windows games through DirectX to Vulkan/OpenGL translation (Wine, Proton, Steam for Linux) but this incurs translation costs and decreases performance sometimes significantly. Also games may crash and behave differently than in Windows. Also, anti-cheat protection usually doesn't work in Linux.
-  * Microsoft Office is not available for Linux. LibreOffice often has major troubles properly opening, rendering or saving documents created in Microsoft Office (alas, it's a standard in the business world). Besides, LibreOffice has a drastically different user interface and many features work differently. Also native Windows fonts are not available in Linux which often leads to formatting issues.
-  * Several crucial Windows applications are not available under Linux: Quicken, Adobe authoring products (Photoshop, Audition, etc.), Corel authoring products (CorelDraw and others), Autodesk software (3ds Max, Autocad, etc.), serious BluRay/DVD authoring products, professional audio applications (CuBase, SoundForge, etc.).
-  * In 2020 there's still no alternative to Windows Network File Sharing (network file sharing that is easily configurable, discoverable, encrypted and password protected). NFS and SSHFS are two lousy totally user-unfriendly alternatives.
-  * Linux doesn't have a reliably working hassle-free fast native (directly mountable via the kernel; FUSE [doesn't cut it](http://sourceforge.net/p/libmtp/code/ci/master/tree/README "GIT README")) [MTP](https://en.wikipedia.org/wiki/Media_Transfer_Protocol) implementation. In order to work with your MTP devices, like ... Linux based Android phones you'd better use ... Windows or MacOS X. **Update** : a Russian programmer was so irked by libMTP he wrote his own complete Qt based application which talks to the Linux kernel directly using libusb. Meet [Android-File-Transfer-Linux](https://github.com/whoozle/android-file-transfer-linux).
-  * Too many things in Linux require manual configuration using text files: NVIDIA Optimus switchable graphics, custom display refresh rates, multiseat setups, USB 3G/LTE/4G modems, various daemons' configuration, and advanced audio setups to name a few.
-  * Forget about managing your e-gadgets (especially smartphones, e.g. iPhones are useless under Linux). In many cases forget about your printer's advanced features like ink-level reporting.
+  * 无论是 Mozilla Firefox 还是 Google [Chrome](http://linux.slashdot.org/story/14/03/04/1926233/google-wont-enable-chrome-video-acceleration-because-of-linux-gpu-bugs) 在 Linux 中都没有使用视频解码和输出加速，因此在 YouTube 上刷小视频，比如相比于 Windows，会更快“吸干”笔记本的电量。
+  * NVIDIA Optimus 是多数 Linux 发行版之痛，而且对于绝大多数人来说，它在 UEFI 安全模式下完全无法工作。
+  * 对于使用当地键盘布局的人来说，快捷键处理是[残缺的](https://bugs.freedesktop.org/show_bug.cgi?id=865)（这个问题到现在有 **15 年之久** 了）。不是所有人都生活在说英语的国家。
+  * X.org 中的键盘处理设计残缺 - 当遇到悬浮窗口或打开的菜单时，全局键盘快捷键/键绑定[不](https://bugzilla.gnome.org/show_bug.cgi?id=344059 "Ways to make global keybindings work during grabs")（GTK）[工作](https://bugs.kde.org/show_bug.cgi?id=70063 "global shortcuts don't work when any popup is active")（Qt）。
+  * 没有比较容易的方法使用发行版仓库以外的软件，尤其是只有源码可用的软件。对于非 IT 专业的普通用户，那更是毫无门道。
+  * 你不玩游戏，对吗？Linux 拥有的[原生 3A 游戏依旧很少](https://store.steampowered.com/linux)：在过去三年里号称 3A 的可玩游戏不足 12 个。坦诚地说，可以通过 DirectX 到 Vulkan/OpenGL 转译（Wine、Proton 和 Steam for Linux）来运行成百上千的 Windows 游戏，但是这样带来了（额外的）转译成本，有时也会显著降低性能表现。游戏可能会崩溃，并且和 Windows 中表现也会有不同。反作弊保护通常也无法在 Linux 中工作。
+  * Microsoft Office 不适用于 Linux。而 Libre Office 在正确打开、渲染或保存在 Microsoft Office 创建的文档等上经常遇到大麻烦（更别说后者是商业界标准）。除此之外，Libre Office（套件）的用户界面（相比 Microsoft Office）完全不同，并且许多功能的工作方式也不一样。Linux 本身不提供 Windows 本统字体，这往往导致格式问题。
+  * Linux 下有几大 Windows 软件不能用：Quicken、Aodobe 创作产品（Photoshop、Audition 等）、Corel 创作产品（CorelDraw 和其他软件）、Autodesk 的软件（3ds Max、Autocad 等）、严肃的 BluRay/DVD 创作产品和专业音像应用（CuBase、SoundForge 等）。
+  * 2020 年了，Windows 网络文件共享（易于配置、发现、加密和有密码保护的网络文件共享）依旧没有替代品。NFS 和 SSHFS 是两个糟糕且完全不用户友好的选择。
+  * Linux 没有工作可靠的、轻松无忧且快速的原生（可通过内核直接挂载；FUSE [不裁剪（阉割）其功能](http://sourceforge.net/p/libmtp/code/ci/master/tree/README "GIT README")）[MTP](https://en.wikipedia.org/wiki/Media_Transfer_Protocol) 实现。为了能和你的设备配合工作，比如 ... 基于 Linux 的 Android 手机，最好还得用 ... Windows 或者 Mac OS X（macOS）。**更新**：一位俄罗斯程序员在被 libmtp 惹得极度愤怒的情况下，用 Qt 写了一个自己的完整的软件，使用 libusb 直接与内核通信。来认识 [Android-File-Transfer-Linux](https://github.com/whoozle/android-file-transfer-linux)。
+  * Linux 中有太多东西需要用文本文件手动配置了：只举几个例子，NVIDIA Optimus 可切换显卡、自定义显示刷新率、一机多用配置（译者注：即一台主机为多位用户提供图形界面使用）、USB 3G/LTE/4G 调制解调器（猫），还有各种守护程序配置，以及高级音频配置等等。
+  * 请忘记如何管理电子设备吧（尤其是智能手机，iPhone 在 Linux 下就如同板砖）。很多情况下，你也会忘记打印机的一些高级功能，比如墨水量报告。
 
-Yeah, let's consider Linux an OS ready for the desktop :-).
+是啊，我们也许能考虑将 Linux 作为可用于桌面的操作系统吧 :-)（苦笑）。
 
 
 ### Commentary From the Author
@@ -440,8 +440,7 @@ First of all, if you're running Windows 8.1 you're safe at least until [year 202
 
 At the same time if you're buying and deploying new workstations you might consider [installing Linux](https://itvision.altervista.org/best-linux-distro-this-year.html). By doing so you'll be helping the open source community by increasing the userbase and possibly finding, reporting and even eliminating bugs in case you have software developers in your organization. Of course, you might want to run applications which have no equivalents under Linux. In this case you have two options: you may either run Windows as a virtual machine or you may try using [Wine](https://www.winehq.org/). Wine is very powerful software which allows you to run Windows applications under Linux at near native speed (sometimes even faster).
 
-© 2009-2020 Artem S. Tashkinov. Last revised: August 9, 2020. The most current
-version can be found [here](https://itvision.altervista.org/why.linux.is.not.ready.for.the.desktop.current.html).
+© 2009-2020 Artem S. Tashkinov. Last revised: August 9, 2020. The most current version can be found [here](https://itvision.altervista.org/why.linux.is.not.ready.for.the.desktop.current.html).
 
 
 
@@ -460,18 +459,12 @@ About the author: _Artem S. Tashkinov is an avid supporter of the Open Source mo
 [GCC](https://gcc.gnu.org/bugzilla/buglist.cgi?email2=aros%40gmx.com&emailreporter2=1&emailtype2=substring&order=Importance&query_format=advanced),
 [Midnight Commander](https://www.midnight-commander.org/query?reporter=birdie), X.org and many others. He's been using Linux exclusively since 1999._
 
-I'm searching for a permanent job (with relocation) as a systems administrator
-in Down Under; you can download my stripped (for security reasons) CV
-[here](https://itvision.altervista.org/files/cv.zip).
+I'm searching for a permanent job (with relocation) as a systems administrator in Down Under; you can download my stripped (for security reasons) CV [here](https://itvision.altervista.org/files/cv.zip).
 
-© 2009-2020 Artem S. Tashkinov \- all rights reserved. You can reproduce any
-part of this text verbatim, but you **must** retain the authorship **and**
-provide a link to this document. The archive of this page can be found
-[here](http://web.archive.org/web/*/http://itvision.altervista.org/why.linux.is.not.ready.for.the.desktop.current.html).
+© 2009-2020 Artem S. Tashkinov \- all rights reserved. You can reproduce any part of this text verbatim, but you **must** retain the authorship **and** provide a link to this document. The archive of this page can be found [here](http://web.archive.org/web/*/http://itvision.altervista.org/why.linux.is.not.ready.for.the.desktop.current.html).
 
 
-You can read the previous [old archived version
-here](https://itvision.altervista.org/why.linux.is.not.ready.for.the.desktop.html).
+You can read the previous [old archived version here](https://itvision.altervista.org/why.linux.is.not.ready.for.the.desktop.html).
 
 
   *[Windows rot]: Significant slow down caused by the installation of new software and disk fragmentation
