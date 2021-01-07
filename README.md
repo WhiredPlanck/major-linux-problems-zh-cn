@@ -21,7 +21,7 @@
 - 前言（[原文](https://github.com/whriedplanck/major-linux-problems-zh-cn/blob/master/full-text.md#preface) | [译文](https://github.com/whriedplanck/major-linux-problems-zh-cn/blob/master/translations-full.md#前言)）
 - 桌面级 Linux 的问题和主要缺点（[原文](https://github.com/whriedplanck/major-linux-problems-zh-cn/blob/master/full-text.md#desktop-linux-problems-and-major-hortcomings) | 译文）
 - **摘要**（太长不看版）（[原文](https://github.com/whriedplanck/major-linux-problems-zh-cn/blob/master/full-text.md#summary) | 译文）
-- 「Linux Works for Me™，本文简直是荒谬！」（[原文](https://github.com/whriedplanck/major-linux-problems-zh-cn/blob/master/full-text.md#) | 译文）
+- 「Linux Works for Me™，这篇文章在胡扯！」云云（[原文](https://github.com/whriedplanck/major-linux-problems-zh-cn/blob/master/full-text.md#) | [译文](https://github.com/whriedplanck/major-linux-problems-zh-cn/blob/master/translations-full.md#这篇文章是胡扯-linux-能给我我的祖父姨妈等等人用-云云)）
 - （原）作者的评价（[原文](https://github.com/whriedplanck/major-linux-problems-zh-cn/blob/master/full-text.md#commentary-from-the-author) | 译文）
 - Linux 的出路在何方（[原文](https://github.com/whriedplanck/major-linux-problems-zh-cn/blob/master/full-text.md#solving-Linux) | 译文）
 - Windows 10 vs. Linux（[原文](https://github.com/whriedplanck/major-linux-problems-zh-cn/blob/master/full-text.md#windows-10-vs-linux) | 译文）

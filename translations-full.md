@@ -2,10 +2,10 @@
 
 目录表
 
-  * 前言
+  * [前言](https://github.com/whriedplanck/major-linux-problems-zh-cn/blob/master/translations-full.md#前言)
   * Desktop Linux Problems and Major Shortcomings
   * **摘要**（太长不看版）
-  * Linux Works for Me™, This Article is Bollocks!
+  * [“Linux Works for Me™，这篇文章是在胡扯！“ 云云](https://github.com/whriedplanck/major-linux-problems-zh-cn/blob/master/translations-full.md#这篇文章是胡扯-linux-能给我我的祖父姨妈等等人用-云云)
   * Commentary from the Author
   * Windows 10 vs. Linux
   * Solving Linux
