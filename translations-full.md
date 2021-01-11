@@ -55,16 +55,17 @@
 请谨记，这份列表的目的，是为了说明白 Linux 需要修复的问题，而不是挑刺。
 
 
-### Desktop Linux Problems and Major Shortcomings
+### 桌面级 Linux 的问题和主要缺点
 
-(For those who hate reading long texts, there's a TL;DR version below). So Linux sucks because ...
+（照顾讨厌阅读长文的读者，下面有一篇“[太长不看版](https://github.com/whriedplanck/major-linux-problems-zh-cn/blob/master/translations-full.md#摘要)”）。所以 Linux 差劲的原因是 ...
 
-  * **Hardware support** : 
-    1. Video accelerators/​acceleration (also see the X system section). 
-      * ! NVIDIA Optimus technology which is used in most laptops often doesn't work well in Linux. People struggle with screen tearing, new kernel releases, etc.
-      * ! Open source drivers have certain, sometimes very serious problems ([Intel](https://bugs.launchpad.net/ubuntu/+source/xserver-xorg-video-intel)-[!](https://bugs.freedesktop.org/show_bug.cgi?id=30364 "poor 3d performance in deep c-states: CLOSED WONT FIX - WAIT WHAT?!!!") and [AMD](https://bugs.launchpad.net/ubuntu/+source/xserver-xorg-video-ati)): 
-        * ! The open source NVIDIA driver is much slower (up to twenty times) than its proprietary counterpart due to incomplete power management (it's solely NVIDIA's fault which refuses to provide the Nouveau project with the required firmware).
-        * ! The open source NVIDIA driver, nouveau, does not properly and fully support power management features and fan speed management (it's mostly NVIDIA's fault).
+  * **硬件支持**：
+    
+    1. 视频加速（另请参见 X 系统部分）。
+      * ! 大多数笔记本计算机所使用的 NVIDIA Optimus 技术在 Linux 中的工作状态常常不太好。人们应付着画面撕裂、新内核更新（带来的驱动）等问题。
+      * ! 开源驱动有某些有时非常严重的问题（[Intel](https://bugs.launchpad.net/ubuntu/+source/xserver-xorg-video-intel)-[!](https://bugs.freedesktop.org/show_bug.cgi?id=30364 "poor 3d performance in deep c-states: CLOSED WONT FIX - WAIT WHAT?!!!") 和 [AMD](https://bugs.launchpad.net/ubuntu/+source/xserver-xorg-video-ati) 都有）：
+        * ! 因为不完善的电源管理，开源的 NVIDIA 驱动比其专有驱动慢得多（最高可达二十倍，这都是 NVIDIA 的错，它不给 Nouveau 项目提供需要的固件） 。
+        * ! 开源 NVIDIA 驱动 Nouveau 不能正确、完全地支持电源管理功能和风扇速度管理（这也主要是 NVIDIA 的锅）。
         * ! Proprietary NVIDIA driver has a [nasty habit](https://devtalk.nvidia.com/default/topic/1002912/linux/very-slow-ramp-down-from-high-to-low-clock-speeds-leading-to-a-significantly-increased-power-consumption/) of keeping your GPU at the highest performance level which significantly increases power consumption, and, in case of mobile users, significantly decreases battery life. NVIDIA was made aware of this bug in July 2017 and though they've made improvements in 2019, the issue still persists.
         * !! According to an anonymous NVIDIA engineer, "Nearly Every Game Ships Broken ... In some cases, we're talking about blatant violations of API rules ... There are lots of optional patches already in the driver that are simply toggled on or off as per-game settings, and then hacks that are more specific to games ... Ever wondered why nearly every major game release is accompanied by a matching driver release from AMD and/or NVIDIA?". The open source community simply doesn't have the resources to implement similar hacks to fix broken games, which means that at least for complex AAA games, proprietary drivers will remain the only option.
       * ! Linux drivers are usually much worse (they require a lot of tinkering, i.e. manual configuration) than Windows/Mac OS drivers in regard to support of non-standard display resolutions, very high (a.k.a. HiDPI) display resolutions or custom refresh rates.
@@ -86,8 +87,8 @@
       * !! Oftentimes you just cannot use new portable devices in Linux because proper support for certain features gets impletemented too late and distros pick up this support even later.
       * Laptops/notebooks often have special buttons and features that don't work (e.g. Fn + F1-F12 combination or special power-saving modes).
     5. ! Resume after suspend in Linux is [unstable](http://news.softpedia.com/news/valve-drops-suspend-function-for-steamos-due-to-poor-support-in-linux-graphics-stack-489396.shtml) and oftentimes doesn't work.
-    6. ! Often [regressions](http://www.datamation.com/open-source/linux-kernel-developers-detail-top-gripes.html) are introduced in the Linux kernel, when some hardware stops working inexplicably in new kernel versions. I have personally reported two serious audio playback regressions, which have been consequently resolved, however _most users don't know how to file bugs, how to bisect regressions, how to identify faulty components._
-
+6. ! Often [regressions](http://www.datamation.com/open-source/linux-kernel-developers-detail-top-gripes.html) are introduced in the Linux kernel, when some hardware stops working inexplicably in new kernel versions. I have personally reported two serious audio playback regressions, which have been consequently resolved, however _most users don't know how to file bugs, how to bisect regressions, how to identify faulty components._
+    
   * **Software support** : 
     1. X system (current primary video output server in Linux): 
       * X.org is [largely](http://linux.slashdot.org/comments.pl?sid=2969319&cid=40603337) [outdated](http://tech.slashdot.org/story/12/04/06/0538250/update-on-wayland-and-x11-support), [unsuitable](http://lanyrd.com/2013/linuxconfau/scctrd/ "The real story behind Wayland and X") [and](https://www.phoronix.com/scan.php?page=article&item=x_wayland_situation&num=1 "The Wayland Situation: Facts About X vs. Wayland") [even](http://www.x.org/wiki/Development/X12#Errors.2C_Oversights_and_Omissions) [very](http://blog.martin-graesslin.com/blog/2015/01/why-screen-lockers-on-x11-cannot-be-secure/) [much](http://lists.x.org/archives/xorg-announce/2014-December/002500.html) [insecure](http://www.jwz.org/xscreensaver/faq.html#no-ctl-alt-bs) for [modern](http://linux.slashdot.org/comments.pl?sid=3041123&cid=40955973) PCs and applications.
