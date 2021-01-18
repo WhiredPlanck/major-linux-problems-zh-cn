@@ -66,17 +66,17 @@
       * ! 开源驱动有某些有时非常严重的问题（[Intel](https://bugs.launchpad.net/ubuntu/+source/xserver-xorg-video-intel)-[!](https://bugs.freedesktop.org/show_bug.cgi?id=30364 "poor 3d performance in deep c-states: CLOSED WONT FIX - WAIT WHAT?!!!") 和 [AMD](https://bugs.launchpad.net/ubuntu/+source/xserver-xorg-video-ati) 都有）：
         * ! 因为不完善的电源管理，开源的 NVIDIA 驱动比其专有驱动慢得多（最高可达二十倍，这都是 NVIDIA 的错，它不给 Nouveau 项目提供需要的固件） 。
         * ! 开源 NVIDIA 驱动 Nouveau 不能正确、完全地支持电源管理功能和风扇速度管理（这也主要是 NVIDIA 的锅）。
-        * ! Proprietary NVIDIA driver has a [nasty habit](https://devtalk.nvidia.com/default/topic/1002912/linux/very-slow-ramp-down-from-high-to-low-clock-speeds-leading-to-a-significantly-increased-power-consumption/) of keeping your GPU at the highest performance level which significantly increases power consumption, and, in case of mobile users, significantly decreases battery life. NVIDIA was made aware of this bug in July 2017 and though they've made improvements in 2019, the issue still persists.
-        * !! According to an anonymous NVIDIA engineer, "Nearly Every Game Ships Broken ... In some cases, we're talking about blatant violations of API rules ... There are lots of optional patches already in the driver that are simply toggled on or off as per-game settings, and then hacks that are more specific to games ... Ever wondered why nearly every major game release is accompanied by a matching driver release from AMD and/or NVIDIA?". The open source community simply doesn't have the resources to implement similar hacks to fix broken games, which means that at least for complex AAA games, proprietary drivers will remain the only option.
-      * ! Linux drivers are usually much worse (they require a lot of tinkering, i.e. manual configuration) than Windows/Mac OS drivers in regard to support of non-standard display resolutions, very high (a.k.a. HiDPI) display resolutions or custom refresh rates.
+        * ! 专有 NVIDIA 驱动有保持 GPU （长期）在高性能水平而使电量消耗显著升高的[讨厌习惯](https://devtalk.nvidia.com/default/topic/1002912/linux/very-slow-ramp-down-from-high-to-low-clock-speeds-leading-to-a-significantly-increased-power-consumption/)，并且特别是对移动用户，这大大降低电池的寿命。NVIDIA 在 2017 年 7 月收到 Bug 报告，虽然他们在 2019 年才做出改进，但这个问题依旧存在。
+        * !! 据一位不愿透露姓名的 NVIDIA 工程师所述，“According to an anonymous NVIDIA engineer, "Nearly Every Game Ships Broken ... In some cases, we're talking about blatant violations of API rules ... There are lots of optional patches already in the driver that are simply toggled on or off as per-game settings, and then hacks that are more specific to games ... Ever wondered why nearly every major game release is accompanied by a matching driver release from AMD and/or NVIDIA?". The open source community simply doesn't have the resources to implement similar hacks to fix broken games, which means that at least for complex AAA games, proprietary drivers will remain the only option.
+      * ! 在非标准显示分辨率、超高显示分辨率（也叫 HiDPI）和自定义刷新率方面，Linux 版本的驱动通常比 Windows/Mac OS（macOS）版本的更糟（需要大量的微调，即手动配置）
       * ! Under Linux, setting multi-monitor configurations especially using multiple GPUs running binary NVIDIA drivers can be a major PITA.
-      * (Not an issue for most users but still) GPU voltage tuning will most likely never be supported for NVIDIA GPUs which means there's no proper overclocking, or underclocking to save power.
+      * （对于大多数用户不是问题但依旧要说）NVIDIA 的 GPU 很可能不会支持 GPU 电压调节了，意味着没有合适的超频方法，也没有降频方法来节约电量
       * !! Extremely poor state and usability of the tools for monitoring and controlling GPU parameters like frequency, voltage and fan curves (akin to MSI Afterburner or GPU-Z in Windows), performance overlay (Fraps, RivaTuner Statistics Server), recording game sessions and streaming.
-    2. Audio subsystem: 
-      * PulseAudio is unsuitable for [multiuser mode](http://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/User/SystemWide/) \- yes, many people share their PCs (an untested solution can be found [here](https://rudd-o.com/linux-and-free-software/how-to-make-pulseaudio-run-once-at-boot-for-all-your-users)).
-      * ! No reliable [echo](https://bbs.archlinux.org/viewtopic.php?id=183166 "pulseaudio + skype = echo") [cancellation](http://blogs.gnome.org/uraeus/2010/10/07/echo-cancellation-on-linux/) (if you use a normal microphone and speakers in many cases you won't be able to use Skype and other VoIP services normally). Windows, Android and MacOS implement it on a system level. There's [a solution](https://thenerdshow.com/audio.html) for PulseAudio - hopefully it'll be enabled by default in the future or/and there'll be an easier way to use it.
-      * Hardly a dealbreaker but then audio professionals also want to use Linux: high definition audio support (>=96KHz, >=24bit) is usually impossible to set up without using [console](https://medium.com/@gamunu/enable-high-quality-audio-on-linux-6f16f3fe7e1f).
-      * Various [audio effects](https://github.com/swh/ladspa) like volume normalization are not included or enabled by default by most distros.
+    2. 音频子系统：
+      * PulseAudio 不适宜[多用户情景模式](http://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/User/SystemWide/)  —— 没错，很多人会共享他们的电脑（[这里](https://rudd-o.com/linux-and-free-software/how-to-make-pulseaudio-run-once-at-boot-for-all-your-users)有一个未经测试的解决方案）。
+      * ! 没有可靠的[回声](https://bbs.archlinux.org/viewtopic.php?id=183166 "pulseaudio + skype = echo")[抑制机制](http://blogs.gnome.org/uraeus/2010/10/07/echo-cancellation-on-linux/)（如果使用普通的麦克风和扬声器，很多情况下将无法正常使用 Skype 和其他 VoIP 服务）。Windows、Android 和 MacOS（macOS）则有系统层级的实现方式。有一个适用于 PulseAudio 的[解决方法](https://thenerdshow.com/audio.html) —— 希望以后能被默认启用或者/并且有更容易使用的方式。
+      * 不用[控制台（终端）](https://medium.com/@gamunu/enable-high-quality-audio-on-linux-6f16f3fe7e1f)通常无法配置高解析音频支持（>= 96KHz, >= 24bit），这也是让很多音频专业用户望而却步的因素。
+      * 多数发行版默认不包含/不启用各种[音效](https://github.com/swh/ladspa)（比如音量规格化）。
     3. Printers, scanners and other more or less peripheral devices: 
       * There are still many printers which are not supported at all or only barely supported - some people argue that the user should research Linux compatibility before buying their hardware. What if the user decides to switch from Windows to Linux when he/she already has some hardware? When people purchase a Windows PC do they research anything? No, they rightly assume everything will work out of the box right from the get-go.
       * Many printer's features are only implemented in Windows drivers.
@@ -88,7 +88,7 @@
       * Laptops/notebooks often have special buttons and features that don't work (e.g. Fn + F1-F12 combination or special power-saving modes).
     5. ! Resume after suspend in Linux is [unstable](http://news.softpedia.com/news/valve-drops-suspend-function-for-steamos-due-to-poor-support-in-linux-graphics-stack-489396.shtml) and oftentimes doesn't work.
 6. ! Often [regressions](http://www.datamation.com/open-source/linux-kernel-developers-detail-top-gripes.html) are introduced in the Linux kernel, when some hardware stops working inexplicably in new kernel versions. I have personally reported two serious audio playback regressions, which have been consequently resolved, however _most users don't know how to file bugs, how to bisect regressions, how to identify faulty components._
-    
+   
   * **Software support** : 
     1. X system (current primary video output server in Linux): 
       * X.org is [largely](http://linux.slashdot.org/comments.pl?sid=2969319&cid=40603337) [outdated](http://tech.slashdot.org/story/12/04/06/0538250/update-on-wayland-and-x11-support), [unsuitable](http://lanyrd.com/2013/linuxconfau/scctrd/ "The real story behind Wayland and X") [and](https://www.phoronix.com/scan.php?page=article&item=x_wayland_situation&num=1 "The Wayland Situation: Facts About X vs. Wayland") [even](http://www.x.org/wiki/Development/X12#Errors.2C_Oversights_and_Omissions) [very](http://blog.martin-graesslin.com/blog/2015/01/why-screen-lockers-on-x11-cannot-be-secure/) [much](http://lists.x.org/archives/xorg-announce/2014-December/002500.html) [insecure](http://www.jwz.org/xscreensaver/faq.html#no-ctl-alt-bs) for [modern](http://linux.slashdot.org/comments.pl?sid=3041123&cid=40955973) PCs and applications.
@@ -118,11 +118,13 @@ Related problems:
 2) There are reports that problems exists with configuring audio mixer volume
 levels.
 
-    2. Wayland: 
-      * !! Applications (or GUI toolkits) must implement their own font antialiasing - there's no API for setting system-wide font rendering. Most sane and advanced windowing systems work exactly this way - Windows, Android, Mac OS X. In Wayland all clients (read applications) are totally independent.
-      * !! Applications (or GUI toolkits) must implement their own DPI scaling.
-      * The above issues are actually the result of not having one unified graphical toolkit/API (and Wayland developers [will not implement](https://bugs.freedesktop.org/show_bug.cgi?id=93794) it). Alas, no one is currently working towards making existing toolkits share one common configuration for setting font antialiasing, DPI scaling and windows shadowing. At least in theory these issues can be easily solved, in practice we already have three independent toolkits for Wayland (GTK3/Qt5/Enlightenment).
-      * !! Wayland works through rasterization of pixels which brings about two very bad critical problems which will never be solved: 
+```
+2. Wayland: 
+  * !! Applications (or GUI toolkits) must implement their own font antialiasing - there's no API for setting system-wide font rendering. Most sane and advanced windowing systems work exactly this way - Windows, Android, Mac OS X. In Wayland all clients (read applications) are totally independent.
+  * !! Applications (or GUI toolkits) must implement their own DPI scaling.
+  * The above issues are actually the result of not having one unified graphical toolkit/API (and Wayland developers [will not implement](https://bugs.freedesktop.org/show_bug.cgi?id=93794) it). Alas, no one is currently working towards making existing toolkits share one common configuration for setting font antialiasing, DPI scaling and windows shadowing. At least in theory these issues can be easily solved, in practice we already have three independent toolkits for Wayland (GTK3/Qt5/Enlightenment).
+  * !! Wayland works through rasterization of pixels which brings about two very bad critical problems which will never be solved: 
+```
 
 Firstly, forget about performance/bandwidth efficient RDP protocol (it's already implemented but it works by sending the updates of large chunks of the screen, i.e. a lot like old highly inefficient VNC), forget about OpenGL pass-through, forget about raw compressed video pass-through. In case you're
 interested all these features work in [Microsoft's RDP](https://en.wikipedia.org/wiki/Remote_Desktop_Protocol#Features).
