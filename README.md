@@ -10,11 +10,11 @@
 
 译文仅是对原文进行尽量忠实的翻译，原文中所表达的观点不代表译者的立场，译者也不为其内容进行背书。
 
-翻译的目的仅为中文读者提供不同视角之观点，以引起相关讨论。目前尚未联系到作者许可。
+翻译的目的仅为中文读者提供不同视角之观点，以引起相关讨论。
 
 > The translation is only to translate the original text as appropriate as possible, all account of opinions thereof are solely determined by author(s) of the original text.  The sole purpose of translator's translating is not an endorsement to the authenticity of the contents.
 
-> The sole purpose of translating is just to provide opinions to Chinese-speaking viewers, and to arouse the discussion about Linux on Desktop. And not licensed by original author(s) yet.
+> The sole purpose of translating is just to provide opinions to Chinese-speaking viewers, and to arouse the discussion about Linux on Desktop.
 
 ## 目录表 / Table of Contents
 
@@ -26,4 +26,8 @@
 - Linux 的出路在何方（[原文](https://github.com/whriedplanck/major-linux-problems-zh-cn/blob/master/full-text.md#solving-Linux) | 译文）
 - Windows 10 vs. Linux（[原文](https://github.com/whriedplanck/major-linux-problems-zh-cn/blob/master/full-text.md#windows-10-vs-linux) | 译文）
 
+## 著作权 / Copyright
 
+> © 2009-2020 Artem S. Tashkinov \- all rights reserved. You can reproduce any part of this text verbatim, but you **must** retain the authorship **and** provide a link to this document. The archive of this page can be found [here](http://web.archive.org/web/*/http://itvision.altervista.org/why.linux.is.not.ready.for.the.desktop.current.html).
+
+本译文根据原作者上述生命进行生产。
