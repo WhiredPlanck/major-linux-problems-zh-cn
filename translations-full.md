@@ -77,9 +77,9 @@
       * ! 没有可靠的[回声](https://bbs.archlinux.org/viewtopic.php?id=183166 "pulseaudio + skype = echo")[抑制机制](http://blogs.gnome.org/uraeus/2010/10/07/echo-cancellation-on-linux/)（如果使用普通的麦克风和扬声器，很多情况下将无法正常使用 Skype 和其他 VoIP 服务）。Windows、Android 和 MacOS（macOS）则有系统层级的实现方式。有一个适用于 PulseAudio 的[解决方法](https://thenerdshow.com/audio.html) —— 希望以后能被默认启用或者/并且有更容易使用的方式。
       * 不用[控制台（终端）](https://medium.com/@gamunu/enable-high-quality-audio-on-linux-6f16f3fe7e1f)通常无法配置高解析音频支持（>= 96KHz, >= 24bit），这也是让很多音频专业用户望而却步的因素。
       * 多数发行版默认不包含/不启用各种[音效](https://github.com/swh/ladspa)（比如音量规格化）。
-    3. Printers, scanners and other more or less peripheral devices: 
-      * There are still many printers which are not supported at all or only barely supported - some people argue that the user should research Linux compatibility before buying their hardware. What if the user decides to switch from Windows to Linux when he/she already has some hardware? When people purchase a Windows PC do they research anything? No, they rightly assume everything will work out of the box right from the get-go.
-      * Many printer's features are only implemented in Windows drivers.
+    3. 打印机、扫描仪等这样那样的周边设备：
+      *  Linux 还有很多打印机仍然完全不支持或者只有少量支持 —— 有些人反驳说用户应该在购买硬件前弄清其 Linux 兼容性。但是如果用户是已经有了硬件并从 Windows 转入 Linux 的呢？人们在买下 Windows 电脑时会弄清所有东西吗？不会，他们会一开始就想当然地认为所有东西都可开箱即用。
+      * 不少打印机的功能只有在 Windows 驱动中才能实现。
       * Some models of scanners and (web-)cameras are still inadequately supported (again many features from Windows drivers are missing) or not supported at all.
       * Incomplete or unstable drivers for some hardware. Problems setting up some hardware (like touchpads in newest laptops, web cameras or Wi-Fi cards, for instance, 802.11ac and USB Wi-Fi adapters are barely supported under Linux and in many cases they are just unusable). Broadcom network adapters are often usable out of the box for a lot of Linux distors (to be honest the company seemingly hates Open Source).
     4. Laptops, tablets, 2 in 1 devices, etc.: 

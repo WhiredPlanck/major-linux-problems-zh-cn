@@ -30,4 +30,4 @@
 
 > © 2009-2020 Artem S. Tashkinov \- all rights reserved. You can reproduce any part of this text verbatim, but you **must** retain the authorship **and** provide a link to this document. The archive of this page can be found [here](http://web.archive.org/web/*/http://itvision.altervista.org/why.linux.is.not.ready.for.the.desktop.current.html).
 
-本译文根据原作者上述生命进行生产。
+本译文根据原作者上述声明出产。
